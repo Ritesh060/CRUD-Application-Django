@@ -1,0 +1,26 @@
+{% extends "Crud/base.html" %}
+
+{% block content %}
+<style>
+    button {
+        display: inline-block;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<h1 style="width: 50%; margin: 0 auto;">Final APIs</h1>
+<br><br> 
+<div style="width: 50%; margin: 0 auto;">
+    <button onclick="window.location.href='http://127.0.0.1:8000/login/'">/login</button>
+    <button onclick="window.location.href='http://127.0.0.1:8000/teams/'">/team</button>
+    <button onclick="window.location.href='http://127.0.0.1:8000/users/'">/users</button>
+</div>
+{% endblock %}
